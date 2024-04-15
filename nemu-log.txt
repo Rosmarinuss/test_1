@@ -1,0 +1,4 @@
+[1;34m[src/monitor/monitor.c,45,load_img] The image is /home/vscode/ics-pa-2020/am-kernels/tests/cpu-tests/build/add-riscv32-nemu.bin[0m
+[1;34m[src/monitor/monitor.c,23,welcome] Debug: [1;32mON[0m[0m
+[1;34m[src/monitor/monitor.c,24,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
+[1;34m[src/monitor/monitor.c,31,welcome] Build time: 03:24:54, Apr 13 2024[0m
