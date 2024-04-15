@@ -2,3 +2,49 @@
 [1;34m[src/monitor/monitor.c,23,welcome] Debug: [1;32mON[0m[0m
 [1;34m[src/monitor/monitor.c,24,welcome] If debug mode is on, A log file will be generated to record every instruction NEMU executes. This may lead to a large log file. If it is not necessary, you can turn it off in include/common.h.[0m
 [1;34m[src/monitor/monitor.c,31,welcome] Build time: 03:24:54, Apr 13 2024[0m
+0x80100000:   13 04 00 00                           addi  $0,0,s0
+0x80100004:   17 91 00 00                           auipc  0x9,sp
+0x80100008:   13 01 c1 ff                           addi  sp,-4,sp
+0x8010000c:   ef 00 c0 0f                           jal  ÿÿ,ra
+0x80100108:   37 05 10 80                           lui  0x80100,a0
+0x8010010c:   13 01 01 ff                           addi  sp,-16,sp
+0x80100110:   13 05 85 12                           addi  a0,296,a0
+0x80100114:   23 26 11 00                           sw  12(sp),ra
+0x80100118:   ef f0 1f f1                           jal  ÿÿ,ra
+0x80100028:   13 01 01 fd                           addi  sp,-48,sp
+0x8010002c:   23 2e 31 01                           sw  28(sp),s3
+0x80100030:   23 2c 41 01                           sw  24(sp),s4
+0x80100034:   23 2a 51 01                           sw  20(sp),s5
+0x80100038:   37 0a 10 80                           lui  0x80100,s4
+0x8010003c:   b7 0a 10 80                           lui  0x80100,s5
+0x80100040:   b7 09 10 80                           lui  0x80100,s3
+0x80100044:   23 28 61 01                           sw  16(sp),s6
+0x80100048:   23 26 71 01                           sw  12(sp),s7
+0x8010004c:   23 24 81 01                           sw  8(sp),s8
+0x80100050:   23 26 11 02                           sw  44(sp),ra
+0x80100054:   13 0c ca 22                           addi  s4,556,s8
+0x80100058:   23 24 81 02                           sw  40(sp),s0
+0x8010005c:   23 22 91 02                           sw  36(sp),s1
+0x80100060:   23 20 21 03                           sw  32(sp),s2
+0x80100064:   93 8a ca 12                           addi  s5,300,s5
+0x80100068:   13 0a ca 22                           addi  s4,556,s4
+0x8010006c:   13 0b 00 00                           addi  $0,0,s6
+0x80100070:   93 89 c9 24                           addi  s3,588,s3
+0x80100074:   93 0b 00 04                           addi  $0,64,s7
+0x80100078:   03 29 0a 00                           lw  0(s4),s2
+0x8010007c:   93 84 0a 00                           addi  s5,0,s1
+0x80100080:   13 04 0c 00                           addi  s8,0,s0
+0x80100084:   03 25 04 00                           lw  0(s0),a0
+0x80100088:   83 a7 04 00                           lw  0(s1),a5
+0x8010008c:   13 04 44 00                           addi  s0,4,s0
+0x80100090:   33 05 a9 00                           shl  s5,tp,$0
+0x80100094:   33 05 f5 40                           shl  t5,s4,s0
+0x80100098:   13 35 15 00                           slti  a0,a0
+0x8010009c:   ef f0 5f f7                           jal  ÿÿ,ra
+0x80100010:   63 04 05 00                           
+0x80100014:   67 80 00 00                           jalr  ra,$0
+0x801000a0:   93 84 44 00                           addi  s1,4,s1
+0x801000a4:   e3 90 89 fe                           
+[1;34m[src/monitor/cpu-exec.c,40,monitor_statistic] total guest instructions = 43[0m
+[1;34m[src/monitor/cpu-exec.c,41,monitor_statistic] host time spent = 0 ms[0m
+[1;34m[src/monitor/cpu-exec.c,43,monitor_statistic] Finish running in less than 1 ms and can not calculate the simulation frequency[0m
